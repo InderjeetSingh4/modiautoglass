@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+/* ========================================
+   Modi Auto Glass — Design System
+   Pinned Car Scroll + Glassmorphism Edition
+   ======================================== */
+
+@theme inline {
+  /* -- Color Palette -- */
+  --color-primary: #D4A24C;
+  --color-primary-hover: #B88636;
+  --color-primary-light: #F5D699;
+  --color-accent-silver: #86868B;
+  --color-accent-silver-light: #D2D2D7;
+
+  --color-bg-main: #0A0A0C;
+  --color-bg-white: #FFFFFF;
+  --color-bg-dark: #1D1D1F;
+
+  --color-text-primary: #F5F5F7;
+  --color-text-secondary: #A1A1A6;
+  --color-text-tertiary: #86868B;
+  --color-text-dark: #1D1D1F;
+
+  --color-success: #34C759;
+  --color-error: #FF3B30;
+
+  /* -- Typography -- */
+  --font-sans: var(--font-inter);
+}
+
+/* ========================================
+   Global Base Styles
+   ======================================== */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: transparent;
+  color: var(--color-text-primary);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: clip;
+}
+
+/* ========================================
+   Glassmorphism Utility Styles (Dark / Light Overlays)
+   ======================================== */
+.glass-nav-pinned {
+  background: rgba(10, 10, 12, 0.6);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-hero-card {
+  background: rgba(15, 20, 30, 0.55);
+  backdrop-filter: blur(32px) saturate(190%);
+  -webkit-backdrop-filter: blur(32px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 2px 6px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+}
+
+.glass-card-pinned {
+  background: rgba(18, 24, 38, 0.6);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-pinned:hover {
+  background: rgba(24, 32, 50, 0.72);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.glass-panel-pinned {
+  background: rgba(15, 20, 32, 0.65);
+  backdrop-filter: blur(36px) saturate(200%);
+  -webkit-backdrop-filter: blur(36px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+}
+
+/* ========================================
+   Master Reusable Glassmorphism Utility
+   ======================================== */
+.glass-panel-master {
+  background: rgba(10, 14, 26, 0.58);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.55),
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  .glass-panel-master {
+    background: rgba(10, 14, 26, 0.92);
+  }
+}
+
+/* Input styles over glass */
+.input-glass-dark {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.input-glass-dark:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.25);
+}
+
+.input-glass-dark::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ========================================
+   Custom Scrollbar
+   ======================================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
