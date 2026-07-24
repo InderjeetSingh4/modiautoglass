@@ -12,7 +12,6 @@ import {
   Sparkles,
 } from "lucide-react";
 import ChipRepairSlider from "./ChipRepairSlider";
-import CityMarquee from "./CityMarquee";
 
 export default function Services() {
   return (
@@ -228,9 +227,6 @@ export default function Services() {
           </motion.div>
         </div>
       </div>
-
-      {/* Sacramento Metro Service Area Marquee Ticker */}
-      <CityMarquee />
     </section>
   );
 }

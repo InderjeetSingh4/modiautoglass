@@ -1,7 +1,7 @@
 "use client";
 
 const cities = [
-  "Sacramento",
+  "Alwar",
   "Elk Grove",
   "Roseville",
   "Folsom",

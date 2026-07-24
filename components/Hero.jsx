@@ -38,7 +38,7 @@ export default function Hero() {
               <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-md border border-white/25 shadow-[0_0_25px_rgba(212,162,76,0.35)] mb-8">
                 <Sparkles className="w-4 h-4 lg:w-5 lg:h-5 text-amber-400 shrink-0" />
                 <span className="text-xs sm:text-sm lg:text-base font-bold text-white tracking-wide uppercase">
-                  Trusted by 10,000+ Sacramento Drivers
+                  Trusted by 10,000+ Alwar Drivers
                 </span>
               </div>
 
@@ -107,10 +107,10 @@ export default function Hero() {
                 <span className="text-xs lg:text-sm font-extrabold text-white uppercase tracking-wider">Technicians Active</span>
               </div>
               <h3 className="text-lg lg:text-2xl font-extrabold text-white mb-2 tracking-tight">
-                Sacramento Metro Mobile Unit
+                Alwar Metro Mobile Unit
               </h3>
               <p className="text-sm lg:text-base text-slate-300 leading-relaxed mb-4">
-                Units currently servicing Sacramento, Roseville, Elk Grove & 35-mile radius with 1-hour drive-away adhesives.
+                Units currently servicing Alwar & surrounding 35-mile radius with 1-hour drive-away adhesives.
               </p>
               <div className="inline-flex items-center gap-2 text-xs lg:text-sm font-semibold text-primary-light">
                 <MapPin className="w-4 h-4" />

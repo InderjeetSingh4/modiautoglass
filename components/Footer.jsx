@@ -1,7 +1,7 @@
 import { Phone, Mail, MapPin, Clock, Shield } from "lucide-react";
 
 const serviceAreas = [
-  "Sacramento",
+  "Alwar",
   "Elk Grove",
   "Roseville",
   "Folsom",
@@ -29,7 +29,7 @@ export default function Footer() {
                   Modi Auto Glass
                 </span>
                 <span className="text-xs font-bold text-primary-light tracking-widest uppercase leading-tight block">
-                  Sacramento • Mobile Service
+                  Alwar • Mobile Service
                 </span>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-sm lg:text-base text-slate-300">
                 <MapPin className="w-4 h-4 text-primary-light mt-1 shrink-0" />
-                <span>Sacramento & Surrounding Metro Area</span>
+                <span>Alwar & Surrounding Metro Area</span>
               </li>
             </ul>
           </div>

@@ -36,7 +36,7 @@ export default function Navbar() {
                 Modi Auto Glass
               </span>
               <span className="text-xs lg:text-sm font-bold text-primary-light tracking-widest uppercase leading-tight block">
-                Sacramento • Mobile Service
+                Alwar • Mobile Service
               </span>
             </div>
           </a>

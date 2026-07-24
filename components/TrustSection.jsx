@@ -18,7 +18,7 @@ const trustPoints = [
   {
     icon: Clock,
     title: "Same-Day Mobile Dispatch",
-    desc: "Mobile technicians travel directly to your home, workplace, or preferred location across Sacramento.",
+    desc: "Mobile technicians travel directly to your home, workplace, or preferred location across Alwar.",
   },
 ];
 
@@ -47,10 +47,10 @@ export default function TrustSection() {
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white tracking-tight mb-6">
-                Why Sacramento Drivers Choose Modi Auto Glass
+                Why Alwar Drivers Choose Modi Auto Glass
               </h2>
               <p className="text-base sm:text-lg lg:text-xl text-slate-200 leading-relaxed mb-10">
-                We combine certified master technicians, OEM materials, and mobile convenience to deliver Sacramento’s most trusted auto glass repair experience.
+                We combine certified master technicians, OEM materials, and mobile convenience to deliver Alwar’s most trusted auto glass repair experience.
               </p>
 
               {/* 3 Trust Points */}
